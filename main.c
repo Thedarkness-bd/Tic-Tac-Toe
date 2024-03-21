@@ -9,9 +9,31 @@ const char PLAYER = 'X';
 const char COMPUTER = 'O';
 /// Global Variables
 
+void resetBoard();
+void printBoard();
+int checkFreeSpace();
+void playerMove();
+void computerMove();
+char checkWinner();
+void printWinner(char);
+
+int main()
+{
+    char winner = ' ';
+    resetBoard();
+    return 0;
+}
+
 // Resetting Board
 void resetBoard()
 {
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            board[i][j] = ' ';
+        }
+    }
 }
 
 // printing board
@@ -42,12 +64,4 @@ char checkWinner()
 // printing Winner
 void printWinner(char winner)
 {
-}
-
-
-
-int main()
-{
-    char winner = ' ';
-    return 0;
 }
