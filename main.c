@@ -138,7 +138,6 @@ void computerMove()
 
         board[x][y] = COMPUTER;
     }
-
     else
     {
         printWinner(' ');
